@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "lib": ["es2017"],
+    "module": "commonjs",
+    "target": "es6",
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "strict": true,
+    "esModuleInterop": true
+  },
+  // "include": ["actions", "bin", "commands", "lib"],
+  "include": ["bin", "commands"],
+  "exclude": ["node_modules"]
+}
