@@ -159,3 +159,7 @@ ignored: directory (*)
 ![img](./inner.svg)
   
 ```
+
+# Changelog
+
+[Change Log](./CHANGELOG.md)

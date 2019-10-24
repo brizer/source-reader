@@ -1,12 +1,13 @@
 {
   "name": "source-reader",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "A cli tool for read source",
   "scripts": {
     "start": "node bin/source-reader.js",
     "build": "tsc",
     "format": "prettier --write \"**/*.ts\"",
-    "test": "jest --config test/jest-config.json"
+    "test": "jest --config test/jest-config.json",
+    "changelog": "conventional-changelog -p angular -r 2 -i CHANGELOG.md -s"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
   "devDependencies": {
     "@types/jest": "^24.0.19",
     "@types/node": "^12.11.1",
+    "conventional-changelog-cli": "^2.0.25",
     "jest": "^24.9.0",
     "prettier": "^1.18.2",
     "ts-jest": "^24.1.0",

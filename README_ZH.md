@@ -151,3 +151,9 @@ ignored: directory (*)
 ![img](./inner.svg)
   
 ```
+
+
+
+# 更新日志
+
+[Change Log](./CHANGELOG.md)
