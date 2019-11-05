@@ -1,3 +1,12 @@
+## 1.0.1 (2019-11-05)
+
+
+### Bugfixs
+
+* detect is graphviz installed ([5a765cf](https://github.com/brizer/source-reader/commit/5a765cf))
+
+
+
 # 1.0.0 (2019-10-24)
 
 
