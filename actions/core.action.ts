@@ -2,6 +2,7 @@ const madge = require('madge');
 import { Input } from '../commands';
 import { AbstractAction } from './abstract.action';
 import { INFO_PREFIX } from '../lib/ui';
+import { judgeGraphViz } from '../lib/utils/env';
 import { NAME, CORE_SVG, CORE_DOT } from '../lib/configuration/const';
 export class CoreAction extends AbstractAction {
   public async handle(inputs: Input[], options: Input[], extraFlags: string[]) {
@@ -16,10 +17,12 @@ export class CoreAction extends AbstractAction {
     let stdout = '';
     let notify = '';
     if (useDot) {
+      await judgeGraphViz();
       stdout = await madgeIns.dot();
       return await this.printOutput(stdout, notify);
     }
     if (useSvg) {
+      await judgeGraphViz();
       const outputPath = await madgeIns.image(useSvg);
       notify = `生成svg文件位于${outputPath}`;
       return await this.printOutput(stdout, notify);
