@@ -1,5 +1,4 @@
 import path from 'path';
-import fs from 'fs';
 import { CommanderStatic, Command } from 'commander';
 import { AbstractCommand } from './abstract.command';
 import { Input } from './command.input';

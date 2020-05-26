@@ -3,7 +3,7 @@
     "declaration": true,
     "lib": ["es2017"],
     "module": "commonjs",
-    "target": "es6",
+    "target": "ES2018",
     "skipLibCheck": true,
     "sourceMap": false,
     "strict": true,

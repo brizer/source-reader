@@ -99,7 +99,6 @@ source-reader inner index.js --dot
 
 <img src="https://raw.githubusercontent.com/brizer/graph-bed/master/img/20191022162516.png"/>
 
-
 ## 直接生成源码阅读文档all
 
 使用all命令，传入入口文件，直接生成项目源码阅读文档。
@@ -152,6 +151,11 @@ ignored: directory (*)
   
 ```
 
+## 查看使用者（按点赞数排行）
+
+``` sh
+sr used https://github.com/cheeriojs/cheerio --page 3
+```
 
 
 # 更新日志

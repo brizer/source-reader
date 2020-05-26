@@ -1,9 +1,10 @@
 import chalk from 'chalk';
 import { CommanderStatic } from 'commander';
-import { TreeAction, GraphAction, CoreAction } from '../actions';
+import { TreeAction, GraphAction, CoreAction, UsedAction } from '../actions';
 import { TreeCommand } from './tree.command';
 import { GraphCommand } from './graph.command';
 import { CoreCommand } from './core.command';
+import { UsedCommand } from './used.command';
 import { ERROR_PREFIX } from '../lib/ui';
 import { AllCommand } from './all.command';
 
@@ -12,6 +13,7 @@ export class CommandLoader {
     new TreeCommand(new TreeAction()).load(program);
     new GraphCommand(new GraphAction()).load(program);
     new CoreCommand(new CoreAction()).load(program);
+    new UsedCommand(new UsedAction()).load(program);
     new AllCommand(new TreeAction(), new CoreAction(), new GraphAction()).load(
       program,
     );

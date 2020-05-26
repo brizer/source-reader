@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/brizer/source-reader#readme",
   "devDependencies": {
+    "@types/cheerio": "^0.22.18",
     "@types/jest": "^24.0.19",
     "@types/node": "^12.11.1",
     "conventional-changelog-cli": "^2.0.25",
@@ -38,7 +39,11 @@
     "typescript": "^3.6.4"
   },
   "dependencies": {
+    "@tomato-js/shared": "0.0.17",
+    "agentkeepalive": "^4.1.2",
+    "axios": "^0.19.2",
     "chalk": "^2.4.2",
+    "cheerio": "^1.0.0-rc.3",
     "commander": "^3.0.2",
     "inquirer": "^7.0.0",
     "madge": "^3.4.4",
