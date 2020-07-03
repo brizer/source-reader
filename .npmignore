@@ -2,6 +2,7 @@
 .gitignore
 .prettierrc
 .travis.yml
+.git/
 Makefile
 
 # source

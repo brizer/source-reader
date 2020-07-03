@@ -20,7 +20,8 @@
   ],
   "bin": {
     "source-reader": "bin/source-reader.js",
-    "sr": "bin/source-reader.js"
+    "sr": "bin/source-reader.js",
+    "sr-prepublish": "bin/prepublish.sh"
   },
   "author": "brizer",
   "license": "MIT",
