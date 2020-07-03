@@ -166,6 +166,14 @@ ignored: directory (*)
 sr used https://github.com/cheeriojs/cheerio --page 3
 ```
 
+
+## Show files after publish in npm
+
+``` sh
+sr-prepublish
+```
+
+
 # Changelog
 
 [Change Log](./CHANGELOG.md)

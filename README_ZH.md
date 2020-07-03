@@ -157,6 +157,11 @@ ignored: directory (*)
 sr used https://github.com/cheeriojs/cheerio --page 3
 ```
 
+## 查看发布npm包后的文件结构
+
+``` sh
+sr-prepublish
+```
 
 # 更新日志
 
