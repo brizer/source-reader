@@ -163,7 +163,7 @@ ignored: directory (*)
 ## Usage (order by star)
 
 ``` sh
-sr used https://github.com/cheeriojs/cheerio --page 3
+sr used axios --page 3
 ```
 
 

@@ -154,7 +154,7 @@ ignored: directory (*)
 ## 查看使用者（按点赞数排行）
 
 ``` sh
-sr used https://github.com/cheeriojs/cheerio --page 3
+sr used axios --page 3
 ```
 
 ## 查看发布npm包后的文件结构

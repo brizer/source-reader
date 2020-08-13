@@ -40,7 +40,9 @@
     "typescript": "^3.6.4"
   },
   "dependencies": {
-    "@tomato-js/shared": "0.0.17",
+    "@tomato-js/api": "0.0.21",
+    "@tomato-js/shared": "0.0.21",
+    "@tomato-node/ui": "0.0.5",
     "agentkeepalive": "^4.1.2",
     "axios": "^0.19.2",
     "chalk": "^2.4.2",

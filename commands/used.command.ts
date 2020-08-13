@@ -18,13 +18,9 @@ export class UsedCommand extends AbstractCommand {
         inputs.push({
           name: NAME,
           value:
-            name ||
-            (
-              require(path.join(process.cwd(), './package.json')).repository ||
-              {}
-            ).url,
+            name || require(path.join(process.cwd(), './package.json')).name || ''
         });
-        await this.action.handle(inputs,options);
+        const infos = await this.action.handle(inputs,options);
         process.exit(0);
       });
   }
