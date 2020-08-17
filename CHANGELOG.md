@@ -1,3 +1,11 @@
+## [1.0.3](https://github.com/brizer/source-reader/compare/1.0.2...1.0.3) (2020-08-17)
+
+
+### Features
+
+* used better ([ff99f82](https://github.com/brizer/source-reader/commit/ff99f82f94c4ef8b6dbd68ddb66b36f1c85dd495))
+
+
 ## [1.0.2](https://github.com/brizer/source-reader/compare/1.0.1...1.0.2) (2020-07-07)
 
 
