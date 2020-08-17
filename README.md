@@ -166,6 +166,7 @@ ignored: directory (*)
 sr used axios --page 3
 ```
 
+If you need a lot of use (github will 403 if there is no token), please make sure that the environment variable `GITHUB_TOKEN` has been set to your own, I will get it through `process.env.GITHUB_TOKEN`.
 
 ## Show files after publish in npm
 

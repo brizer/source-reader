@@ -157,6 +157,8 @@ ignored: directory (*)
 sr used axios --page 3
 ```
 
+如果需要大量使用（无token情况下github会403），请确保环境变量GITHUB_TOKEN已设置为你自己的，我会通过process.env.GITHUB_TOKEN来取。
+
 ## 查看发布npm包后的文件结构
 
 ``` sh
