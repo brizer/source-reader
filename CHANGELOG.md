@@ -1,3 +1,12 @@
+## [1.0.4](https://github.com/brizer/source-reader/compare/1.0.3...1.0.4) (2020-08-24)
+
+
+### Features
+
+* outer in new archieve ([3460a5c](https://github.com/brizer/source-reader/commit/3460a5c1f1f3556e774847d643da402f39493a20))
+
+
+
 ## [1.0.3](https://github.com/brizer/source-reader/compare/1.0.2...1.0.3) (2020-08-17)
 
 
