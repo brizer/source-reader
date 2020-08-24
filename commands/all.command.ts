@@ -3,6 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import { join } from 'path';
 import { CommanderStatic, Command } from 'commander';
+import { loading } from '@tomato-node/ui';
 import { Input } from './command.input';
 import {
   NAME,
@@ -13,6 +14,10 @@ import {
 } from '../lib/configuration/const';
 import { TreeAction, CoreAction, GraphAction } from '../actions';
 import { formatReadSourceContent } from '../lib/configuration/defaults';
+import { GRAPH_DETAIL } from '../lib/configuration/const';
+
+// Convert fs.readFile into Promise version of same    
+const writeFile = promisify(fs.writeFile);
 
 export class AllCommand {
   constructor(
@@ -41,11 +46,14 @@ export class AllCommand {
         const outerOptions: Input[] = [];
         outerOptions.push({ name: PACKAGE_MANAGER, value: 'npm' });
         outerOptions.push({ name: NO_OPEN, value: true });
-        const outerUrl = await this.outerAction.handle(
+        outerOptions.push({ name: GRAPH_DETAIL, value: true });
+        const myloading = loading('正在生成内部、外部模块依赖').show();
+        const outerContent = await this.outerAction.handle(
           outerInputs,
           outerOptions,
           [],
         );
+        await writeFile('outer.svg',outerContent,'utf-8');
         const innerInputs: Input[] = [];
         innerInputs.push({ name: NAME, value: index || 'index.js' });
         const innerOptions: Input[] = [];
@@ -61,10 +69,12 @@ export class AllCommand {
         const content = {
           treeResult,
           innerResult: '![img](./inner.svg)',
-          outerResult: `请在： ${outerUrl} 查看`,
+          outerResult: '![img](./outer.svg)',
         };
         const formatedContent = formatReadSourceContent(content);
         await this.createReadSourceFile(formatedContent);
+        myloading.hide({type:'succeed',text:'生成完毕'});
+
       });
   }
 

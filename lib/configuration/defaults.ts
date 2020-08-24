@@ -12,6 +12,7 @@ export const defaultConfiguration: Configuration = {
     ignore: ['node_modules', 'test'],
   },
   packageManager: 'npm',
+  detail:false,
 };
 
 export function formatReadSourceContent(
