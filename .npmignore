@@ -9,9 +9,6 @@ Makefile
 **/*.ts
 *.ts
 
-# definitions
-!**/*.d.ts
-!*.d.ts
 
 # configuration
 renovate.json
