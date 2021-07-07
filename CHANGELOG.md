@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/brizer/source-reader/compare/1.0.3...1.0.5) (2021-07-07)
+
+### Bug Fixes
+
+* change npm js site ([6490c25](https://github.com/brizer/source-reader/commit/6490c25b2611902173914e4a9b9c24607503fb49))
+* fix ignore for remove .git ([7733242](https://github.com/brizer/source-reader/commit/7733242749d29263358597bc8922781e42e07964))
+
 ## [1.0.4](https://github.com/brizer/source-reader/compare/1.0.3...1.0.4) (2020-08-24)
 
 
