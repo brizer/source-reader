@@ -21,7 +21,7 @@ async function fetchModule(name:any, version:any = 'latest') {
     //
     // Also, we can't fetch scoped modules at specific versions.  See https://goo.gl/dSMitm
     const reqPath = !isScoped ? pathAndVersion : path;
-    req = _getCache[reqPath] =   get(`https://registry.npmjs.cf/${reqPath}`);
+    req = _getCache[reqPath] =   get(`https://registry.npmjs.org/${reqPath}`);
   }
 
   return req.then((data:any) => {
